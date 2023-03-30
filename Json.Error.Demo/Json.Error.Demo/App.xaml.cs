@@ -60,7 +60,8 @@ namespace Json.Error.Demo
             Console.WriteLine("UTF encoded-----------------------------------------");
             Console.WriteLine(jsonUtf8);
 
-
+            var money = -528.49m;
+            Debug.WriteLine($"negative money, expected: -$528.489, actual: {money:C2}");
             // de-serialize
 
             var utfReader = new Utf8JsonReader(bwriter.WrittenSpan);

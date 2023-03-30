@@ -69,6 +69,7 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -114,6 +115,10 @@
       <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
+	<!--added to try to avoid "missing method exception" in Syste.Test.Json-->
+	<ItemGroup>
+		<FrameworkReference Include="NETStandard.Library" IsImplicitlyDefined="true" Pack="false" PrivateAssets="All"/>
+	</ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
